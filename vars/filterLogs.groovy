@@ -7,6 +7,6 @@ def call(String filter_string, int occurrence) {
     int count = StringUtils.countMatches(logs, filter_string);
     if (count > occurrence -1) {
         currentBuild.result='UNSTABLE'
-        println "job set to unstable due to warring count more"
+        println "job set to unstable due to word count more"
     }
 }
